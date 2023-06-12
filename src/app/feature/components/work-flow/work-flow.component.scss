@@ -1,0 +1,12 @@
+::ng-deep .mat-mdc-tab .mdc-tab__text-label {
+    display: inline-flex;
+    align-items: center;
+    color: #6E7078;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+::ng-deep .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label, .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+    color: #6E7078;
+    font-weight: 700;
+}

@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="some-container-with-large-dimensions" ngFlowchartCanvas>
+                <div class="palette">
+                    <div *ngFor="let item of items" >
+                        <span>{{item.name}}</span>
+                    </div>
+                </div>
+                <ng-template #stepContent>
+                    <div class="step-container">
+                        <div class="step-heading">
+                            heading
+                        </div>
+                        <div class="step-content">
+                            content
+                        </div>
+                    </div>
+                </ng-template>
+                
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <p>Step 1 - Setup</p><br>
+            <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+                <mat-tab label="SMS">
+                    <p>ACTIVATE SMS CHANNEL</p>
+                    
+                </mat-tab>
+                <mat-tab label="Email">
+                    <p>ACTIVATE Email CHANNEL</p>
+                </mat-tab>
+                <mat-tab label="App Notification">
+                    <p>ACTIVATE App Notification CHANNEL</p>
+                </mat-tab>
+              </mat-tab-group>
+        </div>
+    </div>
+</div>
